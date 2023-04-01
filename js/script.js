@@ -14,9 +14,18 @@ btn2.addEventListener('click', close)
   
 // =================================================================================
 
-const hiddenImg = document.querySelectorAll(".hidden")
-const click = document.querySelector(".my-click")
-const changing = () =>{
-    hiddenImg.classList.add("none")
-}
-// click.addEventListener('click',changing)
+const tabs = document.querySelectorAll(".click-a");
+const contents = document.querySelectorAll("#change-section");
+
+tabs.forEach((tab, index) =>{
+    tab.addEventListener('click', ()=>{
+        tabs.forEach((tab) =>{
+            tab.classList.remove('hv-after')
+        })
+        tab.classList.add('hv-after')
+
+        contents.forEach((c) => c.classList.remove('active-section'))
+
+        contents[index].classList.add('active-section')
+    })
+})
