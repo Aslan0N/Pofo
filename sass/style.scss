@@ -1,8 +1,3 @@
-// @media (max-width: 762px) {
-//     .first-none{
-//         display: none !important;
-//     }
-// }
 @media (max-width: 762px) {
     header{
         nav{
@@ -72,15 +67,12 @@ ul{
         display: block;
         width: 100%;
         height: 1.5px;
-        transition:all 200ms;background-color: gray;
+        transition:all 200ms;
+        background-color: gray;
     }
-    // &:hover{
-    //     color: #000 !important;
-    //     &::after{
-    //         background-color: grey;
-    
-    //     }
-    // }
+}
+.hv-dark{
+    color: #dcdcdc !important;
 }
 .none{
     display: none !important;
@@ -94,7 +86,7 @@ ul{
     &:hover{
         img{
             transition: all 900ms ;
-            transform: scale(1.1);
+            // transform: scale(1.1);
             filter: blur(3px);
         }
         .hv-card-absolute{
@@ -118,6 +110,13 @@ ul{
 }
 footer{
     height: 20vh;
+    background-color: var(--headerBg);
+    i{
+        color: var(--textColor) !important;
+    }
+    p{
+        color: var(--textColor) !important;
+    }
 }
 .hv{
     transition: 1s;
@@ -229,4 +228,54 @@ footer{
 }
 .active-section{
     display: block !important;
+}
+.dark{
+    --headerBg:#1f1f1f;
+    --mainBg:#1f1f1f;
+    --textColor:#dcdcdc;
+}
+header{
+    background-color: var(--headerBg);
+    i{
+        color: var(--textColor) !important;
+    }
+   nav{
+    .container{
+        ul{
+            li{
+                a{
+                    i{
+                        color: var(--textColor) !important;
+                    }
+                }
+            }
+        }
+    }
+   }
+}
+main{
+    background-color: var(--mainBg);
+    i{
+        color: var(--textColor) !important;
+    }
+    p{
+        color: var(--textColor) !important;
+    }
+    h1{
+        color: var(--textColor);
+    }
+    a{
+        color: var(--textColor) !important;
+    }
+}
+.img{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 370px;
+        height: 400px;
+        margin: 5px;
+    }
 }

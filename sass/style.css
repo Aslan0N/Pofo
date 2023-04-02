@@ -70,6 +70,10 @@ ul li {
   background-color: gray;
 }
 
+.hv-dark {
+  color: #dcdcdc !important;
+}
+
 .none {
   display: none !important;
 }
@@ -83,7 +87,6 @@ ul li {
 }
 .hv-card-relative:hover img {
   transition: all 900ms;
-  transform: scale(1.1);
   filter: blur(3px);
 }
 .hv-card-relative:hover .hv-card-absolute {
@@ -106,6 +109,13 @@ ul li {
 
 footer {
   height: 20vh;
+  background-color: var(--headerBg);
+}
+footer i {
+  color: var(--textColor) !important;
+}
+footer p {
+  color: var(--textColor) !important;
 }
 
 .hv {
@@ -229,4 +239,48 @@ footer {
 
 .active-section {
   display: block !important;
+}
+
+.dark {
+  --headerBg:#1f1f1f;
+  --mainBg:#1f1f1f;
+  --textColor:#dcdcdc;
+}
+
+header {
+  background-color: var(--headerBg);
+}
+header i {
+  color: var(--textColor) !important;
+}
+header nav .container ul li a i {
+  color: var(--textColor) !important;
+}
+
+main {
+  background-color: var(--mainBg);
+}
+main i {
+  color: var(--textColor) !important;
+}
+main p {
+  color: var(--textColor) !important;
+}
+main h1 {
+  color: var(--textColor);
+}
+main a {
+  color: var(--textColor) !important;
+}
+
+.img {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.img img {
+  width: 370px;
+  height: 400px;
+  margin: 5px;
 }/*# sourceMappingURL=style.css.map */
